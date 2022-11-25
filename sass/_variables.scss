@@ -1,0 +1,66 @@
+//fonts
+
+$titleFont: "Montserrat";
+$subTitleFont: "Kaushan Script";
+$contentFont: "Roboto";
+
+//colors
+
+$primaryColor: #ffffff;
+$secondaryColor: #fce38a;
+$solidTextColor: #333333;
+$lightTextColor: #999999;
+$buttonBackgroundColor: #95e1d3;
+$warningColor: #f38181;
+$inputBorderColor: #e7e7e7;
+$dividerColor: #e5e5e5;
+$inputPlaceholderColor: #cccccc;
+$colorBlack: #000000;
+
+//font-sizes
+
+$fontSize-xs: 14px;
+$fontSize-s: 15px;
+$fontSize-m: 24px;
+$fontSize-l: 30px;
+$fontSize-xl: 72px;
+$fontSize-xxl: 150px;
+
+//spacings
+
+$spacingXxs: 0.25rem;
+$spacingXs: 0.5rem;
+$spacingSm: 1rem;
+$spacingMd: 2rem;
+$spacingL: 3rem;
+$spacingXl: 4rem;
+
+$breakpoints: (
+  xs: (
+    max-width: 576px,
+  ),
+  s: (
+    max-width: 768px,
+  ),
+  md: (
+    max-width: 992px,
+  ),
+  lg: (
+    max-width: 1200px,
+  ),
+  xl: (
+    max-width: 1400px,
+  ),
+);
+
+@mixin mediaq($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+
+  @if ($size) {
+    @media #{$size} {
+      @content;
+    }
+  } @else {
+    @error '"#{$breakpoint}" - nie ma takiej wielkości';
+  }
+}
