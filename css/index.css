@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap");
+/* line 1, ../PROJEKTY/GoIT/sass/_reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 1, ../PROJEKTY/GoIT/sass/_header.scss */
+.header {
+  width: 100%;
+  height: 1000px;
+  padding: 28px;
+  background-color: #fce38a;
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+}
+
+@media (max-width: 768px) {
+  /* line 1, ../PROJEKTY/GoIT/sass/_header.scss */
+  .header {
+    height: 700px;
+  }
+}
+
+/* line 15, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  /* line 15, ../PROJEKTY/GoIT/sass/_header.scss */
+  .header__navContainer {
+    height: 104px;
+    padding: 42px 28px;
+  }
+}
+
+/* line 28, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__navigation--mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  /* line 28, ../PROJEKTY/GoIT/sass/_header.scss */
+  .header__navigation--mobile {
+    display: block;
+  }
+}
+
+/* line 35, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 20%;
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  /* line 35, ../PROJEKTY/GoIT/sass/_header.scss */
+  .header__logoContainer {
+    width: 50%;
+  }
+}
+
+/* line 47, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__logo {
+  text-decoration: none;
+  transition: 0.1s;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 60, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__navigation {
+  width: 60%;
+}
+
+@media (max-width: 992px) {
+  /* line 60, ../PROJEKTY/GoIT/sass/_header.scss */
+  .header__navigation {
+    display: none;
+  }
+}
+
+/* line 68, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__navList {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+/* line 74, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__navItem {
+  text-align: left;
+  cursor: pointer;
+}
+
+/* line 77, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__navItem:hover a {
+  color: #fce38a;
+  border-bottom: 3px solid #fce38a;
+}
+
+/* line 82, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__navLink {
+  text-decoration: none;
+  transition: 0.1s;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 99, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__hero {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 112, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__subtitle {
+  margin-bottom: 42px;
+  margin-top: 150px;
+  color: #ffffff;
+  font-family: "Kaushan Script";
+  font-size: 72px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  /* line 112, ../PROJEKTY/GoIT/sass/_header.scss */
+  .header__subtitle {
+    font-size: 60px;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 112, ../PROJEKTY/GoIT/sass/_header.scss */
+  .header__subtitle {
+    font-size: 48px;
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 112, ../PROJEKTY/GoIT/sass/_header.scss */
+  .header__subtitle {
+    font-size: 30px;
+  }
+}
+
+/* line 132, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__title {
+  width: 100%;
+  max-width: 802px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 150px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  /* line 132, ../PROJEKTY/GoIT/sass/_header.scss */
+  .header__title {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 132, ../PROJEKTY/GoIT/sass/_header.scss */
+  .header__title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 132, ../PROJEKTY/GoIT/sass/_header.scss */
+  .header__title {
+    font-size: 48px;
+  }
+}
+
+/* line 152, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__button {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border: 3px solid #ffffff;
+  width: 160px;
+  height: 40px;
+}
+
+/* line 167, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__mobileBtn {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */

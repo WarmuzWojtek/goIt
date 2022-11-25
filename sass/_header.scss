@@ -1,0 +1,170 @@
+.header {
+  width: 100%;
+  height: 1000px;
+  padding: $spacingSm;
+  background-color: #fce38a;
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  @include mediaq(s) {
+    height: 700px;
+  }
+
+  &__navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    @include mediaq(md) {
+      height: 104px;
+      padding: $spacingSm * 1.5 $spacingSm;
+    }
+  }
+
+  &__navigation--mobile {
+    display: none;
+    @include mediaq(md) {
+      display: block;
+    }
+  }
+
+  &__logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    height: 100%;
+
+    @include mediaq(md) {
+      width: 50%;
+    }
+  }
+
+  &__logo {
+    text-decoration: none;
+    transition: 0.1s;
+
+    color: $primaryColor;
+    font-family: $titleFont;
+    font-size: $fontSize-l;
+    font-weight: 700;
+    text-align: center;
+
+    cursor: pointer;
+  }
+
+  &__navigation {
+    width: 60%;
+
+    @include mediaq(md) {
+      display: none;
+    }
+  }
+
+  &__navList {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+
+  &__navItem {
+    text-align: left;
+    cursor: pointer;
+    &:hover a {
+      color: $secondaryColor;
+      border-bottom: 3px solid $secondaryColor;
+    }
+  }
+  &__navLink {
+    text-decoration: none;
+    transition: 0.1s;
+    color: $primaryColor;
+    font-family: $titleFont;
+    font-size: $fontSize-xs;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @include mediaq(md) {
+    }
+
+    &:hover {
+    }
+  }
+
+  &__hero {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mediaq(s) {
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: $spacingL;
+    margin-top: $spacingXxxl;
+    color: $primaryColor;
+    font-family: $subTitleFont;
+    font-size: $fontSize-3xl;
+    text-align: center;
+    @include mediaq(md) {
+      font-size: $fontSize-xxl;
+      margin-top: $spacingXxl;
+    }
+    @include mediaq(s) {
+      font-size: $fontSize-xl;
+      margin-top: $spacingXl;
+    }
+    @include mediaq(xs) {
+      font-size: $fontSize-l;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 802px;
+    color: $primaryColor;
+    font-family: $titleFont;
+    font-size: $fontSize-4xl;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    @include mediaq(md) {
+      font-size: $fontSize-3xl;
+    }
+    @include mediaq(s) {
+      font-size: $fontSize-xxl;
+    }
+    @include mediaq(xs) {
+      font-size: $fontSize-xl;
+    }
+  }
+
+  &__button {
+    margin-top: $spacingXxxl;
+    margin-bottom: $spacingXxxl;
+    background-color: transparent;
+    color: $primaryColor;
+    font-family: $titleFont;
+    font-size: $fontSize-xs;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border: 3px solid $primaryColor;
+    width: 160px;
+    height: 40px;
+  }
+
+  &__mobileBtn {
+    cursor: pointer;
+  }
+}

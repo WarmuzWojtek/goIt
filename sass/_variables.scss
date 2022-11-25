@@ -23,17 +23,21 @@ $fontSize-xs: 14px;
 $fontSize-s: 15px;
 $fontSize-m: 24px;
 $fontSize-l: 30px;
-$fontSize-xl: 72px;
-$fontSize-xxl: 150px;
+$fontSize-xl: 48px;
+$fontSize-xxl: 60px;
+$fontSize-3xl: 72px;
+$fontSize-4xl: 150px;
 
 //spacings
 
-$spacingXxs: 0.25rem;
-$spacingXs: 0.5rem;
-$spacingSm: 1rem;
-$spacingMd: 2rem;
-$spacingL: 3rem;
-$spacingXl: 4rem;
+$spacingXxs: 14px;
+$spacingXs: 16px;
+$spacingSm: 28px;
+$spacingMd: 32px;
+$spacingL: 42px;
+$spacingXl: 56px;
+$spacingXxl: 120px;
+$spacingXxxl: 150px;
 
 $breakpoints: (
   xs: (
