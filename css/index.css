@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap");
 /* line 1, ../PROJEKTY/GoIT/sass/_reset.scss */
 * {
+  box-sizing: border-box;
+}
+
+/* line 7, ../PROJEKTY/GoIT/sass/_reset.scss */
+body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 /* line 1, ../PROJEKTY/GoIT/sass/_header.scss */
@@ -219,6 +223,134 @@
 /* line 167, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__mobileBtn {
   cursor: pointer;
+}
+
+/* line 1, ../PROJEKTY/GoIT/sass/_services.scss */
+.services {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 42px;
+}
+
+@media (max-width: 992px) {
+  /* line 1, ../PROJEKTY/GoIT/sass/_services.scss */
+  .services {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 1, ../PROJEKTY/GoIT/sass/_services.scss */
+  .services {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 1, ../PROJEKTY/GoIT/sass/_services.scss */
+  .services {
+    padding: 14px;
+  }
+}
+
+/* line 15, ../PROJEKTY/GoIT/sass/_services.scss */
+.services__subtitle {
+  width: 100%;
+  color: #333333;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  text-align: center;
+  padding: 0;
+  margin-top: 56px;
+}
+
+/* line 25, ../PROJEKTY/GoIT/sass/_services.scss */
+.services__title {
+  width: 100%;
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+/* line 35, ../PROJEKTY/GoIT/sass/_services.scss */
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+/* line 40, ../PROJEKTY/GoIT/sass/_services.scss */
+.services__card {
+  display: flex;
+  padding: 28px;
+}
+
+@media (max-width: 992px) {
+  /* line 40, ../PROJEKTY/GoIT/sass/_services.scss */
+  .services__card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 40, ../PROJEKTY/GoIT/sass/_services.scss */
+  .services__card {
+    padding: 14px;
+  }
+}
+
+/* line 50, ../PROJEKTY/GoIT/sass/_services.scss */
+.services__icon {
+  margin-right: 28px;
+  padding-top: 28px;
+}
+
+@media (max-width: 768px) {
+  /* line 50, ../PROJEKTY/GoIT/sass/_services.scss */
+  .services__icon {
+    margin-right: 16px;
+  }
+}
+
+/* line 58, ../PROJEKTY/GoIT/sass/_services.scss */
+.services__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* line 62, ../PROJEKTY/GoIT/sass/_services.scss */
+.services__content > h5 {
+  width: 100%;
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* line 70, ../PROJEKTY/GoIT/sass/_services.scss */
+.services__content > p {
+  width: 100%;
+  height: 39px;
+  color: #999999;
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+}
+
+/* line 80, ../PROJEKTY/GoIT/sass/_services.scss */
+.services__divider {
+  width: 60px;
+  height: 3px;
+  margin: 56px auto;
+  background-color: #f38181;
 }
 
 /*# sourceMappingURL=index.css.map */

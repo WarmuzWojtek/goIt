@@ -1,0 +1,86 @@
+.services {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacingL;
+  @include mediaq(md) {
+    padding: $spacingSm;
+  }
+  @include mediaq(s) {
+    padding: $spacingXs;
+  }
+  @include mediaq(xs) {
+    padding: $spacingXxs;
+  }
+  &__subtitle {
+    width: 100%;
+    color: $solidTextColor;
+    font-family: $subTitleFont;
+    font-size: $fontSize-m;
+    text-align: center;
+    padding: 0;
+    margin-top: $spacingXl;
+  }
+
+  &__title {
+    width: 100%;
+    color: $solidTextColor;
+    font-family: $titleFont;
+    font-size: $fontSize-l;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+  }
+  &__card {
+    display: flex;
+    padding: $spacingSm;
+    @include mediaq(md) {
+      padding: $spacingXs;
+    }
+    @include mediaq(s) {
+      padding: $spacingXxs;
+    }
+  }
+  &__icon {
+    margin-right: $spacingSm;
+    padding-top: $spacingSm;
+
+    @include mediaq(s) {
+      margin-right: $spacingXs;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    & > h5 {
+      width: 100%;
+      color: $solidTextColor;
+      font-family: $titleFont;
+      font-size: $fontSize-xs;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    & > p {
+      width: 100%;
+      height: 39px;
+      color: $lightTextColor;
+      font-family: $contentFont;
+      font-size: $fontSize-s;
+      line-height: 24px;
+      text-align: left;
+    }
+  }
+  &__divider {
+    width: 60px;
+    height: 3px;
+    margin: $spacingXl auto;
+    background-color: $warningColor;
+  }
+}
