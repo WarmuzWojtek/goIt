@@ -353,4 +353,214 @@ body {
   background-color: #f38181;
 }
 
+/* line 1, ../PROJEKTY/GoIT/sass/_team.scss */
+.team {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 42px;
+}
+
+@media (max-width: 992px) {
+  /* line 1, ../PROJEKTY/GoIT/sass/_team.scss */
+  .team {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 1, ../PROJEKTY/GoIT/sass/_team.scss */
+  .team {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 1, ../PROJEKTY/GoIT/sass/_team.scss */
+  .team {
+    padding: 14px;
+  }
+}
+
+/* line 15, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__subtitle {
+  width: 100%;
+  color: #333333;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  text-align: center;
+  padding: 0;
+  margin-top: 56px;
+}
+
+/* line 25, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__title {
+  width: 100%;
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+/* line 35, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: 1rem;
+}
+
+/* line 40, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__card {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  padding: 28px;
+}
+
+@media (max-width: 992px) {
+  /* line 40, ../PROJEKTY/GoIT/sass/_team.scss */
+  .team__card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 40, ../PROJEKTY/GoIT/sass/_team.scss */
+  .team__card {
+    padding: 14px;
+  }
+}
+
+/* line 53, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__photoContainer {
+  position: relative;
+  background-color: #95e1d3;
+  width: 380px;
+  height: 470px;
+  margin-bottom: 32px;
+}
+
+/* line 60, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/png/dix.png");
+  transition: 0.2s;
+  background-size: cover;
+}
+
+/* line 70, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__photo:hover {
+  left: -10px;
+  top: -10px;
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.73) 0%, rgba(243, 129, 129, 0.73) 100%), url("/images/png/dix.png");
+}
+
+/* line 80, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__photo:hover > div {
+  z-index: 1;
+}
+
+/* line 83, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__photo:hover li {
+  opacity: 1;
+}
+
+/* line 88, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__photoOverlay {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+/* line 101, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__socialsContainer {
+  list-style: none;
+  display: flex;
+}
+
+/* line 106, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__socialMedia {
+  opacity: 0;
+  transition: 0.2s;
+  width: 56px;
+  height: 56px;
+}
+
+/* line 112, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__socialMedia > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+  background-color: #fce38a;
+}
+
+/* line 120, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__socialMedia > a:hover {
+  background-color: #f38181;
+}
+
+/* line 123, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__socialMedia > a:hover svg g g path {
+  fill: white;
+}
+
+/* line 129, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__divider {
+  width: 60px;
+  height: 3px;
+  margin: 56px auto;
+  background-color: #f38181;
+}
+
+/* line 136, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__description {
+  width: 100%;
+  color: #999999;
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* line 145, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__name {
+  width: 100%;
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* line 154, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__position {
+  margin: 0;
+  width: 100%;
+  color: #999999;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 24px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=index.css.map */
