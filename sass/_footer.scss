@@ -1,0 +1,98 @@
+.footer {
+  &__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid $dividerColor;
+    padding: $spacingXs 0;
+    @include mediaq(lg) {
+      padding: $spacingXs;
+    }
+  }
+  &__info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: $solidTextColor;
+    font-family: $titleFont;
+    font-size: $fontSize-xs;
+    text-align: left;
+    @include mediaq(s) {
+      padding: $spacingXs;
+      width: 100%;
+    }
+
+    & p {
+      width: 100%;
+      & span {
+        color: #f38181;
+      }
+    }
+  }
+  &__form {
+    width: 50%;
+
+    @include mediaq(s) {
+      padding: $spacingXs;
+      width: 100%;
+    }
+    & form {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      @include mediaq(s) {
+        justify-content: flex-start;
+      }
+    }
+
+    & input[type="text"] {
+      width: 230px;
+      height: 40px;
+      border: 1px solid $inputBorderColor;
+      background-color: $primaryColor;
+      outline: none;
+      padding: 0 $spacingXxs;
+      margin-right: -$spacing3xs;
+
+      &:focus {
+        border: 1px solid $buttonBackgroundColor;
+      }
+
+      &::placeholder {
+        color: $inputPlaceholderColor;
+        font-family: "Roboto";
+        font-size: $fontSize-s;
+        font-weight: 200;
+        font-style: italic;
+        line-height: 24px;
+        text-align: left;
+      }
+      @include mediaq(s) {
+        width: 60%;
+      }
+    }
+    & input[type="submit"] {
+      width: 150px;
+      height: 40px;
+      background-color: $buttonBackgroundColor;
+      color: $primaryColor;
+      font-family: $titleFont;
+      font-size: $fontSize-xs;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      border: none;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        border: 10px solid $buttonBackgroundColor;
+      }
+      @include mediaq(s) {
+        width: 40%;
+      }
+    }
+  }
+}

@@ -563,4 +563,141 @@ body {
   text-align: center;
 }
 
+/* line 2, ../PROJEKTY/GoIT/sass/_footer.scss */
+.footer__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #e5e5e5;
+  padding: 16px 0;
+}
+
+@media (max-width: 1200px) {
+  /* line 2, ../PROJEKTY/GoIT/sass/_footer.scss */
+  .footer__container {
+    padding: 16px;
+  }
+}
+
+/* line 14, ../PROJEKTY/GoIT/sass/_footer.scss */
+.footer__info {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 14px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  /* line 14, ../PROJEKTY/GoIT/sass/_footer.scss */
+  .footer__info {
+    padding: 16px;
+    width: 100%;
+  }
+}
+
+/* line 27, ../PROJEKTY/GoIT/sass/_footer.scss */
+.footer__info p {
+  width: 100%;
+}
+
+/* line 29, ../PROJEKTY/GoIT/sass/_footer.scss */
+.footer__info p span {
+  color: #f38181;
+}
+
+/* line 34, ../PROJEKTY/GoIT/sass/_footer.scss */
+.footer__form {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  /* line 34, ../PROJEKTY/GoIT/sass/_footer.scss */
+  .footer__form {
+    padding: 16px;
+    width: 100%;
+  }
+}
+
+/* line 41, ../PROJEKTY/GoIT/sass/_footer.scss */
+.footer__form form {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  /* line 41, ../PROJEKTY/GoIT/sass/_footer.scss */
+  .footer__form form {
+    justify-content: flex-start;
+  }
+}
+
+/* line 50, ../PROJEKTY/GoIT/sass/_footer.scss */
+.footer__form input[type="text"] {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  background-color: #ffffff;
+  outline: none;
+  padding: 0 14px;
+  margin-right: -10px;
+}
+
+/* line 59, ../PROJEKTY/GoIT/sass/_footer.scss */
+.footer__form input[type="text"]:focus {
+  border: 1px solid #95e1d3;
+}
+
+/* line 63, ../PROJEKTY/GoIT/sass/_footer.scss */
+.footer__form input[type="text"]::placeholder {
+  color: #cccccc;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 24px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  /* line 50, ../PROJEKTY/GoIT/sass/_footer.scss */
+  .footer__form input[type="text"] {
+    width: 60%;
+  }
+}
+
+/* line 76, ../PROJEKTY/GoIT/sass/_footer.scss */
+.footer__form input[type="submit"] {
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s;
+}
+
+/* line 88, ../PROJEKTY/GoIT/sass/_footer.scss */
+.footer__form input[type="submit"]:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  border: 10px solid #95e1d3;
+}
+
+@media (max-width: 768px) {
+  /* line 76, ../PROJEKTY/GoIT/sass/_footer.scss */
+  .footer__form input[type="submit"] {
+    width: 40%;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
