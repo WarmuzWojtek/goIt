@@ -4,10 +4,12 @@
   padding: $spacingSm;
   background-color: #fce38a;
   background-image: linear-gradient(
-    to top,
-    rgba(252, 227, 138, 0.9) 0%,
-    rgba(243, 129, 129, 0.9) 100%
-  );
+      to top,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url("/images/png/eagle.png");
+  background-position: center;
   @include mediaq(s) {
     height: 700px;
   }
@@ -80,6 +82,7 @@
     }
   }
   &__navLink {
+    width: 100%;
     text-decoration: none;
     transition: 0.1s;
     color: $primaryColor;
@@ -88,11 +91,8 @@
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-
-    @include mediaq(md) {
-    }
-
-    &:hover {
+    &:hover svg g g path {
+      fill: $secondaryColor;
     }
   }
 
@@ -104,13 +104,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @include mediaq(s) {
-    }
   }
 
   &__subtitle {
-    margin-bottom: $spacingL;
+    margin-bottom: 0;
     margin-top: $spacingXxxl;
     color: $primaryColor;
     font-family: $subTitleFont;
@@ -138,6 +135,7 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
     @include mediaq(md) {
       font-size: $fontSize-3xl;
     }
@@ -162,6 +160,12 @@
     border: 3px solid $primaryColor;
     width: 160px;
     height: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      outline-style: solid;
+      outline-color: $buttonBackgroundColor;
+    }
   }
 
   &__mobileBtn {

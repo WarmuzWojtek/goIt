@@ -16,7 +16,8 @@ body {
   height: 1000px;
   padding: 28px;
   background-color: #fce38a;
-  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url("/images/png/eagle.png");
+  background-position: center;
 }
 
 @media (max-width: 768px) {
@@ -26,7 +27,7 @@ body {
   }
 }
 
-/* line 15, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 17, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__navContainer {
   display: flex;
   justify-content: space-between;
@@ -37,26 +38,26 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* line 15, ../PROJEKTY/GoIT/sass/_header.scss */
+  /* line 17, ../PROJEKTY/GoIT/sass/_header.scss */
   .header__navContainer {
     height: 104px;
     padding: 42px 28px;
   }
 }
 
-/* line 28, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 30, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__navigation--mobile {
   display: none;
 }
 
 @media (max-width: 992px) {
-  /* line 28, ../PROJEKTY/GoIT/sass/_header.scss */
+  /* line 30, ../PROJEKTY/GoIT/sass/_header.scss */
   .header__navigation--mobile {
     display: block;
   }
 }
 
-/* line 35, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 37, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__logoContainer {
   display: flex;
   align-items: center;
@@ -66,13 +67,13 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* line 35, ../PROJEKTY/GoIT/sass/_header.scss */
+  /* line 37, ../PROJEKTY/GoIT/sass/_header.scss */
   .header__logoContainer {
     width: 50%;
   }
 }
 
-/* line 47, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 49, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__logo {
   text-decoration: none;
   transition: 0.1s;
@@ -84,39 +85,40 @@ body {
   cursor: pointer;
 }
 
-/* line 60, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 62, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__navigation {
   width: 60%;
 }
 
 @media (max-width: 992px) {
-  /* line 60, ../PROJEKTY/GoIT/sass/_header.scss */
+  /* line 62, ../PROJEKTY/GoIT/sass/_header.scss */
   .header__navigation {
     display: none;
   }
 }
 
-/* line 68, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 70, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__navList {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
 }
 
-/* line 74, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 76, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__navItem {
   text-align: left;
   cursor: pointer;
 }
 
-/* line 77, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 79, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__navItem:hover a {
   color: #fce38a;
   border-bottom: 3px solid #fce38a;
 }
 
-/* line 82, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 84, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__navLink {
+  width: 100%;
   text-decoration: none;
   transition: 0.1s;
   color: #ffffff;
@@ -125,6 +127,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+/* line 94, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__navLink:hover svg g g path {
+  fill: #fce38a;
 }
 
 /* line 99, ../PROJEKTY/GoIT/sass/_header.scss */
@@ -138,9 +145,9 @@ body {
   align-items: center;
 }
 
-/* line 112, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 109, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__subtitle {
-  margin-bottom: 42px;
+  margin-bottom: 0;
   margin-top: 150px;
   color: #ffffff;
   font-family: "Kaushan Script";
@@ -149,7 +156,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* line 112, ../PROJEKTY/GoIT/sass/_header.scss */
+  /* line 109, ../PROJEKTY/GoIT/sass/_header.scss */
   .header__subtitle {
     font-size: 60px;
     margin-top: 120px;
@@ -157,7 +164,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* line 112, ../PROJEKTY/GoIT/sass/_header.scss */
+  /* line 109, ../PROJEKTY/GoIT/sass/_header.scss */
   .header__subtitle {
     font-size: 48px;
     margin-top: 56px;
@@ -165,13 +172,13 @@ body {
 }
 
 @media (max-width: 576px) {
-  /* line 112, ../PROJEKTY/GoIT/sass/_header.scss */
+  /* line 109, ../PROJEKTY/GoIT/sass/_header.scss */
   .header__subtitle {
     font-size: 30px;
   }
 }
 
-/* line 132, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 129, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__title {
   width: 100%;
   max-width: 802px;
@@ -181,30 +188,31 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 @media (max-width: 992px) {
-  /* line 132, ../PROJEKTY/GoIT/sass/_header.scss */
+  /* line 129, ../PROJEKTY/GoIT/sass/_header.scss */
   .header__title {
     font-size: 72px;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 132, ../PROJEKTY/GoIT/sass/_header.scss */
+  /* line 129, ../PROJEKTY/GoIT/sass/_header.scss */
   .header__title {
     font-size: 60px;
   }
 }
 
 @media (max-width: 576px) {
-  /* line 132, ../PROJEKTY/GoIT/sass/_header.scss */
+  /* line 129, ../PROJEKTY/GoIT/sass/_header.scss */
   .header__title {
     font-size: 48px;
   }
 }
 
-/* line 152, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 150, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__button {
   margin-top: 150px;
   margin-bottom: 150px;
@@ -218,9 +226,17 @@ body {
   border: 3px solid #ffffff;
   width: 160px;
   height: 40px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-/* line 167, ../PROJEKTY/GoIT/sass/_header.scss */
+/* line 165, ../PROJEKTY/GoIT/sass/_header.scss */
+.header__button:hover {
+  outline-style: solid;
+  outline-color: #95e1d3;
+}
+
+/* line 171, ../PROJEKTY/GoIT/sass/_header.scss */
 .header__mobileBtn {
   cursor: pointer;
 }
@@ -408,11 +424,47 @@ body {
 /* line 35, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
 }
 
 /* line 40, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__container div:nth-child(1) > div.team__photoContainer > div {
+  background-image: url("/images/png/dix.png");
+}
+
+/* line 42, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__container div:nth-child(1) > div.team__photoContainer > div:hover {
+  left: -10px;
+  top: -10px;
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.73) 0%, rgba(243, 129, 129, 0.73) 100%), url("/images/png/dix.png");
+}
+
+/* line 53, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__container div:nth-child(2) > div.team__photoContainer > div {
+  background-image: url("/images/png/campbell.png");
+}
+
+/* line 55, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__container div:nth-child(2) > div.team__photoContainer > div:hover {
+  left: -10px;
+  top: -10px;
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.73) 0%, rgba(243, 129, 129, 0.73) 100%), url("/images/png/campbell.png");
+}
+
+/* line 66, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__container div:nth-child(3) > div.team__photoContainer > div {
+  background-image: url("/images/png/fertig.png");
+}
+
+/* line 68, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__container div:nth-child(3) > div.team__photoContainer > div:hover {
+  left: -10px;
+  top: -10px;
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.73) 0%, rgba(243, 129, 129, 0.73) 100%), url("/images/png/fertig.png");
+}
+
+/* line 80, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__card {
   display: flex;
   flex-direction: column;
@@ -421,58 +473,50 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* line 40, ../PROJEKTY/GoIT/sass/_team.scss */
+  /* line 80, ../PROJEKTY/GoIT/sass/_team.scss */
   .team__card {
     padding: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 40, ../PROJEKTY/GoIT/sass/_team.scss */
+  /* line 80, ../PROJEKTY/GoIT/sass/_team.scss */
   .team__card {
     padding: 14px;
   }
 }
 
-/* line 53, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 93, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__photoContainer {
   position: relative;
   background-color: #95e1d3;
-  width: 380px;
+  width: 320px;
   height: 470px;
   margin-bottom: 32px;
 }
 
-/* line 60, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 100, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__photo {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/images/png/dix.png");
   transition: 0.2s;
   background-size: cover;
 }
 
-/* line 70, ../PROJEKTY/GoIT/sass/_team.scss */
-.team__photo:hover {
-  left: -10px;
-  top: -10px;
-  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.73) 0%, rgba(243, 129, 129, 0.73) 100%), url("/images/png/dix.png");
-}
-
-/* line 80, ../PROJEKTY/GoIT/sass/_team.scss */
-.team__photo:hover > div {
+/* line 108, ../PROJEKTY/GoIT/sass/_team.scss */
+.team__photo:hover div {
   z-index: 1;
 }
 
-/* line 83, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 111, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__photo:hover li {
   opacity: 1;
 }
 
-/* line 88, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 116, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__photoOverlay {
   z-index: -1;
   position: absolute;
@@ -486,21 +530,21 @@ body {
   transition: 0.2s;
 }
 
-/* line 101, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 129, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__socialsContainer {
   list-style: none;
   display: flex;
 }
 
-/* line 106, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 134, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__socialMedia {
-  opacity: 0;
+  opacity: 1;
   transition: 0.2s;
   width: 56px;
   height: 56px;
 }
 
-/* line 112, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 140, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__socialMedia > a {
   display: flex;
   justify-content: center;
@@ -511,17 +555,17 @@ body {
   background-color: #fce38a;
 }
 
-/* line 120, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 148, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__socialMedia > a:hover {
   background-color: #f38181;
 }
 
-/* line 123, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 151, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__socialMedia > a:hover svg g g path {
-  fill: white;
+  fill: #ffffff;
 }
 
-/* line 129, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 157, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__divider {
   width: 60px;
   height: 3px;
@@ -529,7 +573,7 @@ body {
   background-color: #f38181;
 }
 
-/* line 136, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 164, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__description {
   width: 100%;
   color: #999999;
@@ -539,7 +583,7 @@ body {
   text-align: center;
 }
 
-/* line 145, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 173, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__name {
   width: 100%;
   color: #333333;
@@ -550,7 +594,7 @@ body {
   margin: 0;
 }
 
-/* line 154, ../PROJEKTY/GoIT/sass/_team.scss */
+/* line 182, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__position {
   margin: 0;
   width: 100%;

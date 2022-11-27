@@ -34,8 +34,48 @@
   }
   &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
+
+    & div:nth-child(1) > div.team__photoContainer > div {
+      background-image: url("/images/png/dix.png");
+      &:hover {
+        left: -10px;
+        top: -10px;
+        background-image: linear-gradient(
+            to top,
+            rgba(252, 227, 138, 0.73) 0%,
+            rgba(243, 129, 129, 0.73) 100%
+          ),
+          url("/images/png/dix.png");
+      }
+    }
+    & div:nth-child(2) > div.team__photoContainer > div {
+      background-image: url("/images/png/campbell.png");
+      &:hover {
+        left: -10px;
+        top: -10px;
+        background-image: linear-gradient(
+            to top,
+            rgba(252, 227, 138, 0.73) 0%,
+            rgba(243, 129, 129, 0.73) 100%
+          ),
+          url("/images/png/campbell.png");
+      }
+    }
+    & div:nth-child(3) > div.team__photoContainer > div {
+      background-image: url("/images/png/fertig.png");
+      &:hover {
+        left: -10px;
+        top: -10px;
+        background-image: linear-gradient(
+            to top,
+            rgba(252, 227, 138, 0.73) 0%,
+            rgba(243, 129, 129, 0.73) 100%
+          ),
+          url("/images/png/fertig.png");
+      }
+    }
   }
   &__card {
     display: flex;
@@ -53,7 +93,7 @@
   &__photoContainer {
     position: relative;
     background-color: $buttonBackgroundColor;
-    width: 380px;
+    width: 320px;
     height: 470px;
     margin-bottom: $spacingMd;
   }
@@ -63,21 +103,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/images/png/dix.png");
     transition: 0.2s;
     background-size: cover;
-
-    &:hover {
-      left: -10px;
-      top: -10px;
-      background-image: linear-gradient(
-          to top,
-          rgba(252, 227, 138, 0.73) 0%,
-          rgba(243, 129, 129, 0.73) 100%
-        ),
-        url("/images/png/dix.png");
-    }
-    &:hover > div {
+    &:hover div {
       z-index: 1;
     }
     &:hover li {
@@ -104,7 +132,7 @@
   }
 
   &__socialMedia {
-    opacity: 0;
+    opacity: 1;
     transition: 0.2s;
     width: 56px;
     height: 56px;
@@ -121,7 +149,7 @@
         background-color: $warningColor;
       }
       &:hover svg g g path {
-        fill: white;
+        fill: $primaryColor;
       }
     }
   }
