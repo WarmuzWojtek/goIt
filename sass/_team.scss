@@ -38,7 +38,7 @@
     grid-gap: 1rem;
 
     & div:nth-child(1) > div.team__photoContainer > div {
-      background-image: url("./images/png/dix.png");
+      background-image: url("../images/png/dix.png");
       &:hover {
         left: -10px;
         top: -10px;
@@ -47,11 +47,11 @@
             rgba(252, 227, 138, 0.73) 0%,
             rgba(243, 129, 129, 0.73) 100%
           ),
-          url("./images/png/dix.png");
+          url("../images/png/dix.png");
       }
     }
     & div:nth-child(2) > div.team__photoContainer > div {
-      background-image: url("./images/png/campbell.png");
+      background-image: url("../images/png/campbell.png");
       &:hover {
         left: -10px;
         top: -10px;
@@ -60,11 +60,11 @@
             rgba(252, 227, 138, 0.73) 0%,
             rgba(243, 129, 129, 0.73) 100%
           ),
-          url("./images/png/campbell.png");
+          url("../images/png/campbell.png");
       }
     }
     & div:nth-child(3) > div.team__photoContainer > div {
-      background-image: url("./images/png/fertig.png");
+      background-image: url("../images/png/fertig.png");
       &:hover {
         left: -10px;
         top: -10px;
@@ -73,7 +73,7 @@
             rgba(252, 227, 138, 0.73) 0%,
             rgba(243, 129, 129, 0.73) 100%
           ),
-          url("./images/png/fertig.png");
+          url("../images/png/fertig.png");
       }
     }
   }

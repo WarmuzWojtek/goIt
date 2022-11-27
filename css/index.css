@@ -16,7 +16,7 @@ body {
   height: 1000px;
   padding: 28px;
   background-color: #fce38a;
-  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url("./images/png/eagle.png");
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url("../images/png/eagle.png");
   background-position: center;
 }
 
@@ -430,38 +430,38 @@ body {
 
 /* line 40, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__container div:nth-child(1) > div.team__photoContainer > div {
-  background-image: url("./images/png/dix.png");
+  background-image: url("../images/png/dix.png");
 }
 
 /* line 42, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__container div:nth-child(1) > div.team__photoContainer > div:hover {
   left: -10px;
   top: -10px;
-  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.73) 0%, rgba(243, 129, 129, 0.73) 100%), url("./images/png/dix.png");
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.73) 0%, rgba(243, 129, 129, 0.73) 100%), url("../images/png/dix.png");
 }
 
 /* line 53, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__container div:nth-child(2) > div.team__photoContainer > div {
-  background-image: url("./images/png/campbell.png");
+  background-image: url("../images/png/campbell.png");
 }
 
 /* line 55, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__container div:nth-child(2) > div.team__photoContainer > div:hover {
   left: -10px;
   top: -10px;
-  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.73) 0%, rgba(243, 129, 129, 0.73) 100%), url("./images/png/campbell.png");
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.73) 0%, rgba(243, 129, 129, 0.73) 100%), url("../images/png/campbell.png");
 }
 
 /* line 66, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__container div:nth-child(3) > div.team__photoContainer > div {
-  background-image: url("./images/png/fertig.png");
+  background-image: url("../images/png/fertig.png");
 }
 
 /* line 68, ../PROJEKTY/GoIT/sass/_team.scss */
 .team__container div:nth-child(3) > div.team__photoContainer > div:hover {
   left: -10px;
   top: -10px;
-  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.73) 0%, rgba(243, 129, 129, 0.73) 100%), url("./images/png/fertig.png");
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.73) 0%, rgba(243, 129, 129, 0.73) 100%), url("../images/png/fertig.png");
 }
 
 /* line 80, ../PROJEKTY/GoIT/sass/_team.scss */
